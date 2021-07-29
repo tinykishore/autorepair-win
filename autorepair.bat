@@ -25,4 +25,7 @@ echo Now running: Deployment Image Servicing and Management
 dism /online /Cleanup-image /restorehealth
 cls
 
+echo Now running: Scheduled Disk Checkup
+echo Y|chkdsk C: /r
+
 shutdown /r

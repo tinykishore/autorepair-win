@@ -21,6 +21,10 @@ pause
 dism /online /Cleanup-image /restorehealth
 cls
 
+echo Now running: Scheduled Disk Checkup
+chkdsk C: /r
+cls
+
 echo Reboot PC?
 pause
 shutdown /r
